@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, Suspense } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -6,13 +6,21 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Users from "./user/pages/Users";
-import NewPlace from "./places/pages/NewPlace";
-import UserPlaces from "./places/pages/UserPlaces";
 import MainNavigation from "./shared/Navigation/MainNavigation";
-import UpdatePlace from "./places/pages/UpdatePlace";
-import Auth from "./user/pages/Auth";
 import { AuthContext } from "./shared/context/auth-context";
+import LoadingSpinner from "./shared/components/UIElements/LoadingSpinner";
+
+//import Users from "./user/pages/Users";
+//import NewPlace from "./places/pages/NewPlace";
+//import UserPlaces from "./places/pages/UserPlaces";
+//import UpdatePlace from "./places/pages/UpdatePlace";
+//import Auth from "./user/pages/Auth";
+
+const Users = React.lazy(() => import("./user/pages/Users"));
+const NewPlace = React.lazy(() => import("./places/pages/NewPlace"));
+const UserPlaces = React.lazy(() => import("./places/pages/UserPlaces"));
+const UpdatePlace = React.lazy(() => import("./places/pages/UpdatePlace"));
+const Auth = React.lazy(() => import("./user/pages/Auth"));
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -40,22 +48,30 @@ const App = () => {
       <Router>
         <MainNavigation to="/" />
         <main>
-          {isLoggedIn && (
-            <Routes>
-              <Route path="/:userId/places" element={<UserPlaces />} />
-              <Route path="/" element={<Users />} />
-              <Route path="/places/new" element={<NewPlace />} />
-              <Route path="/places/:placeId" element={<UpdatePlace />} />
-              <Route path="/auth" element={<Navigate to="/" />} />
-            </Routes>
-          )}
-          {!isLoggedIn && (
-            <Routes>
-              <Route path="/:userId/places" element={<UserPlaces />} />
-              <Route path="/" element={<Users />} />
-              <Route path="/auth" element={<Auth />} />
-            </Routes>
-          )}
+          <Suspense
+            fallback={
+              <div className="center">
+                <LoadingSpinner />
+              </div>
+            }
+          >
+            {isLoggedIn && (
+              <Routes>
+                <Route path="/:userId/places" element={<UserPlaces />} />
+                <Route path="/" element={<Users />} />
+                <Route path="/places/new" element={<NewPlace />} />
+                <Route path="/places/:placeId" element={<UpdatePlace />} />
+                <Route path="/auth" element={<Navigate to="/" />} />
+              </Routes>
+            )}
+            {!isLoggedIn && (
+              <Routes>
+                <Route path="/:userId/places" element={<UserPlaces />} />
+                <Route path="/" element={<Users />} />
+                <Route path="/auth" element={<Auth />} />
+              </Routes>
+            )}
+          </Suspense>
         </main>
       </Router>
     </AuthContext.Provider>
