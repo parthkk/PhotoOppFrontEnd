@@ -19,27 +19,33 @@
 
 .main-navigation__title {
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main-navigation__title a {
   text-decoration: none;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main-navigation__header-nav {
   display: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main-navigation__drawer-nav {
   height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media (min-width: 768px) {
   .main-navigation__menu-btn {
     display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .main-navigation__header-nav {
     display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 }

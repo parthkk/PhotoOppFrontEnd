@@ -5,13 +5,12 @@
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", serif;
 }
 
 body {
-  margin: 0;
-  background: #0cc9a3;
-  background-image: "url(/ThemeImages/background.png)";
+  background-image: url("https://images.hdqwalls.com/wallpapers/space-minimalism-hd-4k.jpg");
+  background-size: 100%;
 }
 
 .slide-in-left-enter {

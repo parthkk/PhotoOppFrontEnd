@@ -6,6 +6,8 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import background from "./ThemeImages/peakpx.jpeg";
+
 import MainNavigation from "./shared/Navigation/MainNavigation";
 import { AuthContext } from "./shared/context/auth-context";
 import LoadingSpinner from "./shared/components/UIElements/LoadingSpinner";

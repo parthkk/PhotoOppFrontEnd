@@ -23,7 +23,7 @@ const MainNavigation = (props) => {
       {drawerisOpen && <Backdrop onClick={closeDrawerHandler} />}
       <SideDrawer show={drawerisOpen} onClick={closeDrawerHandler}>
         <nav className="main-navigation__drawer-nav">
-          <NavLinks />{" "}
+          <NavLinks /> id
         </nav>
       </SideDrawer>
       <MainHeader>
@@ -38,6 +38,7 @@ const MainNavigation = (props) => {
         <h1 className="main-navigation__title">
           <Link to="/">PhotoOpp</Link>
         </h1>
+        <div className="logo-container"></div>
         <nav className="main-navigation__header-nav">
           <NavLinks />
         </nav>
