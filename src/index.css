@@ -11,6 +11,7 @@ html {
 body {
   margin: 0;
   background: #0cc9a3;
+  background-image: "url(/ThemeImages/background.png)";
 }
 
 .slide-in-left-enter {
