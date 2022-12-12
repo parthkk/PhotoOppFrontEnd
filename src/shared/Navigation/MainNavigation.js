@@ -36,7 +36,7 @@ const MainNavigation = (props) => {
           <span />
         </button>
         <h1 className="main-navigation__title">
-          <Link to="/">PhotoOpp</Link>
+          <Link to="/">GeoPals</Link>
         </h1>
         <div className="logo-container"></div>
         <nav className="main-navigation__header-nav">

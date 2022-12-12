@@ -10,8 +10,11 @@ import ImageUpload from "../../shared/components/FormElements/ImageUpload";
 
 import {
   VALIDATOR_EMAIL,
+  VALIDATOR_MAX,
+  VALIDATOR_MAXLENGTH,
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE,
+  VALIDATOR_REQUIRE2,
 } from "../../shared/util/validators";
 import { AuthContext } from "../../shared/context/auth-context";
 
@@ -111,8 +114,8 @@ const Auth = () => {
               id="name"
               text="text"
               label="Your Name"
-              validators={[VALIDATOR_REQUIRE()]}
-              errorText="Please enter a name."
+              validators={[VALIDATOR_REQUIRE2()]}
+              errorText="Please enter a name (10 characters max)."
               onInput={inputHandler}
             />
           )}
@@ -139,7 +142,7 @@ const Auth = () => {
             type="password"
             label="Password"
             validators={[VALIDATOR_MINLENGTH(6)]}
-            errorText="Please enter a valid password"
+            errorText="Please enter a valid password (More than 6 characters)"
             onInput={inputHandler}
           />
           <Button type="submit" disabled={!formState.isValid}>
