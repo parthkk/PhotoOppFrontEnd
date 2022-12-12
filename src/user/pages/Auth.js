@@ -10,10 +10,10 @@ import ImageUpload from "../../shared/components/FormElements/ImageUpload";
 
 import {
   VALIDATOR_EMAIL,
-  VALIDATOR_MAX,
-  VALIDATOR_MAXLENGTH,
+  //VALIDATOR_MAX,
+  //VALIDATOR_MAXLENGTH,
   VALIDATOR_MINLENGTH,
-  VALIDATOR_REQUIRE,
+  //VALIDATOR_REQUIRE,
   VALIDATOR_REQUIRE2,
 } from "../../shared/util/validators";
 import { AuthContext } from "../../shared/context/auth-context";
