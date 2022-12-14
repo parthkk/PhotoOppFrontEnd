@@ -9,6 +9,7 @@ import {
 import MainNavigation from "./shared/Navigation/MainNavigation";
 import { AuthContext } from "./shared/context/auth-context";
 import LoadingSpinner from "./shared/components/UIElements/LoadingSpinner";
+import Homepage from "./HomePage/homepage";
 
 //import Users from "./user/pages/Users";
 //import NewPlace from "./places/pages/NewPlace";
@@ -58,7 +59,8 @@ const App = () => {
             {isLoggedIn && (
               <Routes>
                 <Route path="/:userId/places" element={<UserPlaces />} />
-                <Route path="/" element={<Users />} />
+                <Route path="/users" element={<Users />} />
+                <Route path="/" element={<Homepage />} />
                 <Route path="/places/new" element={<NewPlace />} />
                 <Route path="/places/:placeId" element={<UpdatePlace />} />
                 <Route path="/auth" element={<Navigate to="/" />} />
@@ -67,7 +69,8 @@ const App = () => {
             {!isLoggedIn && (
               <Routes>
                 <Route path="/:userId/places" element={<UserPlaces />} />
-                <Route path="/" element={<Users />} />
+                <Route path="/users" element={<Users />} />
+                <Route path="/" element={<Homepage />} />
                 <Route path="/auth" element={<Auth />} />
               </Routes>
             )}
