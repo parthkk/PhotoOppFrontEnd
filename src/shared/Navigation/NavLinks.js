@@ -10,7 +10,7 @@ const NavLinks = (props) => {
   return (
     <ul className="nav-links">
       <li>
-        <NavLink end to="/">
+        <NavLink end to="/users">
           ALL USERS
         </NavLink>
       </li>
