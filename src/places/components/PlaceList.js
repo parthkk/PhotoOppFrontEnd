@@ -14,7 +14,7 @@ const PlaceList = (props) => {
       <div className="place-list center">
         <Card>
           <h2> This user does not have any places</h2>
-          <Button to="/">Back to All Users</Button>
+          <Button to="/allusers">Back to All Users</Button>
         </Card>
       </div>
     );

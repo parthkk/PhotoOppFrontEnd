@@ -54,7 +54,10 @@
 .middle {
   display: flex;
   justify-content: center;
-  width: 61vw;
-  padding-left: 37vw;
-  padding-top: 25vh;
+  max-width: 100%;
+  height: 70vh;
+  width: auto;
+  align-items: center;
+  /* padding-left: 37vw;
+  padding-top: 25vh; */
 }

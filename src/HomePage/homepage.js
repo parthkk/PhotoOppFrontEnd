@@ -6,6 +6,9 @@ import world from "./world.gif";
 function Homepage() {
   return (
     <div>
+      <div className="middle">
+        <img src={world} alt="the world" />
+      </div>
       <div class="overlay"></div>
       <div class="text">
         <div class="wrapper">
@@ -107,8 +110,6 @@ function Homepage() {
           <div class="shadow">T</div>
         </div>
       </div>
-
-      <img className="middle" src={world} alt="the world" />
     </div>
   );
 }
