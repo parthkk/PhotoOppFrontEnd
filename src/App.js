@@ -59,7 +59,7 @@ const App = () => {
             {isLoggedIn && (
               <Routes>
                 <Route path="/:userId/places" element={<UserPlaces />} />
-                <Route path="/api/users" element={<Users />} />
+                <Route path="/allusers" element={<Users />} />
                 <Route path="/" element={<Homepage />} />
                 <Route path="/places/new" element={<NewPlace />} />
                 <Route path="/places/:placeId" element={<UpdatePlace />} />
@@ -69,7 +69,7 @@ const App = () => {
             {!isLoggedIn && (
               <Routes>
                 <Route path="/:userId/places" element={<UserPlaces />} />
-                <Route path="/api/users" element={<Users />} />
+                <Route path="/allusers" element={<Users />} />
                 <Route path="/" element={<Homepage />} />
                 <Route path="/auth" element={<Auth />} />
               </Routes>
