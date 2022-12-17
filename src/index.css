@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  background-image: url("https://images.hdqwalls.com/wallpapers/space-minimalism-hd-4k.jpg");
+  background-image: url("./backgroundimage.png");
+  /* background-color: #182f40; */
   background-size: 100%;
 }
 

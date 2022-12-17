@@ -1,16 +1,114 @@
 import React from "react";
+import "./homepage.css";
+import world from "./world.gif";
 
 // the homepage component
 function Homepage() {
   return (
     <div>
-      <h1>Welcome to my homepage!</h1>
-      <p>This is where you will find some information about me and my work.</p>
-      <img
-        src="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_4x3.jpg"
-        alt="My dog"
-        style={{ float: "right" }}
-      />
+      <div class="overlay"></div>
+      <div class="text">
+        <div class="wrapper">
+          <div id="L" class="letter">
+            S
+          </div>
+          <div class="shadow">S</div>
+        </div>
+        <div class="wrapper">
+          <div id="I" class="letter">
+            H
+          </div>
+          <div class="shadow">H</div>
+        </div>
+        <div class="wrapper">
+          <div id="G" class="letter">
+            A
+          </div>
+          <div class="shadow">A</div>
+        </div>
+        <div class="wrapper">
+          <div id="H" class="letter">
+            R
+          </div>
+          <div class="shadow">R</div>
+        </div>
+        <div class="wrapper">
+          <div id="T" class="letter">
+            E
+          </div>
+          <div class="shadow">E</div>
+        </div>
+        <div class="wrapper">
+          <div id="S" class="letter"></div>
+          <div class="shadow"></div>
+        </div>
+        <div class="wrapper">
+          <div id="N" class="letter">
+            Y
+          </div>
+          <div class="shadow">Y</div>
+        </div>
+        <div class="wrapper">
+          <div id="E" class="letter">
+            O
+          </div>
+          <div class="shadow">O</div>
+        </div>
+        <div class="wrapper">
+          <div id="S" class="letter">
+            U
+          </div>
+          <div class="shadow">U</div>
+        </div>
+        <div class="wrapper">
+          <div id="Stwo" class="letter">
+            R
+          </div>
+          <div class="shadow">R</div>
+        </div>
+        <div class="wrapper">
+          <div id="S" class="letter"></div>
+          <div class="shadow"></div>
+        </div>
+        <div class="wrapper">
+          <div id="S" class="letter">
+            M
+          </div>
+          <div class="shadow">M</div>
+        </div>
+        <div class="wrapper">
+          <div id="Stwo" class="letter">
+            O
+          </div>
+          <div class="shadow">O</div>
+        </div>
+        <div class="wrapper">
+          <div id="S" class="letter">
+            M
+          </div>
+          <div class="shadow">M</div>
+        </div>
+        <div class="wrapper">
+          <div id="Stwo" class="letter">
+            E
+          </div>
+          <div class="shadow">E</div>
+        </div>
+        <div class="wrapper">
+          <div id="S" class="letter">
+            N
+          </div>
+          <div class="shadow">N</div>
+        </div>
+        <div class="wrapper">
+          <div id="S" class="letter">
+            T
+          </div>
+          <div class="shadow">T</div>
+        </div>
+      </div>
+
+      <img className="middle" src={world} />
     </div>
   );
 }

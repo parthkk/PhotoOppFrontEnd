@@ -7,7 +7,9 @@
   top: 0;
   left: 0;
   background: #182f40;
-  padding: 0 1rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   z-index: 5;
 }
 
