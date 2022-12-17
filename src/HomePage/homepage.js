@@ -108,7 +108,7 @@ function Homepage() {
         </div>
       </div>
 
-      <img className="middle" src={world} />
+      <img className="middle" src={world} alt="the world" />
     </div>
   );
 }
