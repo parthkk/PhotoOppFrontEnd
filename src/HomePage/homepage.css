@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
 .overlay {
   position: absolute;
   bottom: 0;
@@ -8,21 +10,21 @@
   box-shadow: inset 0px 6px 6px #182f40;
   /* background: rgb(254, 205, 108); */
   background-image: linear-gradient(
-    rgba(191, 122, 48, 1) 0%,
-    rgba(191, 122, 48, 0.3) 50%,
-    rgba(191, 122, 48, 0.15) 65%,
-    rgba(191, 122, 48, 0.075) 75.5%,
-    rgba(191, 122, 48, 0.037) 82.85%,
-    rgba(191, 122, 48, 0.019) 88%,
-    rgba(191, 122, 48, 0) 100%
+    rgb(255, 115, 0) 0%,
+    rgba(255, 115, 0, 0.3) 50%,
+    rgba(255, 115, 0, 0.15) 65%,
+    rgba(255, 115, 0, 0.075) 75.5%,
+    rgba(255, 115, 0, 0.037) 82.85%,
+    rgba(255, 115, 0, 0.019) 88%,
+    rgba(255, 115, 0, 0) 100%
   );
 }
 .text {
-  font-family: "Yanone Kaffeesatz";
-  font-size: 5vw;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4.5vw;
   display: flex;
   position: absolute;
-  bottom: 11vh;
+  bottom: 11.8vh;
   left: 50%;
   color: aliceblue;
   z-index: 101;
@@ -30,25 +32,25 @@
   user-select: none;
 }
 .text .wrapper {
-  padding-left: 0.85vw;
-  padding-right: 0.85vw;
-  padding-top: 1vh;
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+  padding-top: 1.5vh;
 }
 .text .wrapper .letter {
   transition: ease-out 1s;
   transform: translateY(40%);
 }
 .text .wrapper .shadow {
-  transform: scale(1, -1);
+  transform: scale(1, -1) translate(0%, -5%);
   color: #182f404f;
-  transition: ease-in 5s, ease-out 5s;
+  transition: ease-in 3.2s, ease-out 3.2s;
 }
 .text .wrapper:hover .letter {
-  transform: translateY(-100%);
+  transform: translateY(-70%);
 }
 .text .wrapper:hover .shadow {
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateY(70%);
 }
 
 .middle {

@@ -6,10 +6,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #182f40;
-  padding-top: 3rem;
+  background: #02192a;
+  padding-top: 2.3rem;
   padding-left: 40px;
   padding-right: 2rem;
+  padding-bottom: 2rem;
   z-index: 5;
 }
 
