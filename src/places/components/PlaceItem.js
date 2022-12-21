@@ -71,7 +71,7 @@ const PlaceItem = (props) => {
         }
       >
         <p>
-          Do you want to delete this place? Please note this cannot be undone.
+          Do you want to delete this moment? Please note this cannot be undone.
         </p>
       </Modal>
       <li className="place-item">

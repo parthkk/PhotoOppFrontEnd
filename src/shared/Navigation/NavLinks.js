@@ -17,12 +17,12 @@ const NavLinks = (props) => {
       </li>
       {auth.isLoggedIn && (
         <li className="nav-link nav-link-ltr">
-          <NavLink to={`/${auth.userId}/places`}>MY PLACES</NavLink>
+          <NavLink to={`/${auth.userId}/places`}>MY MOMENTS</NavLink>
         </li>
       )}
       {auth.isLoggedIn && (
         <li className="nav-link nav-link-ltr">
-          <NavLink to="/places/new">NEW PLACE</NavLink>
+          <NavLink to="/places/new">NEW MOMENT</NavLink>
         </li>
       )}
       {!auth.isLoggedIn && (

@@ -13,7 +13,7 @@ const PlaceList = (props) => {
     return (
       <div className="place-list center">
         <Card>
-          <h2> This user does not have any places</h2>
+          <h2> This user does not have any moments.</h2>
           <Button to="/allusers">Back to All Users</Button>
         </Card>
       </div>
@@ -24,8 +24,8 @@ const PlaceList = (props) => {
     return (
       <div className="place-list center">
         <Card>
-          <h2> No places found. Maybe create one?</h2>
-          <Button to="/places/new">Share Place</Button>
+          <h2> No moments found. Maybe create one?</h2>
+          <Button to="/places/new">Share Your Moment</Button>
         </Card>
       </div>
     );
